@@ -1,0 +1,12 @@
+{
+  "type": "content",
+  "modid": "fluffytowelsmoreoredrops",
+  "name": "More ore drops",
+  "description" : "A simple mod to increase or decrease the amount of ore drops you get.",
+  "authors": ["FluffyTowels"],
+  "version": "1.0.0",
+  "dependencies": { 
+	"game": "1.18",
+	"survival": ""
+  }
+}

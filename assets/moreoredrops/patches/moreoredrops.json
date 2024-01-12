@@ -1,0 +1,83 @@
+[
+    {
+        "file": "game:blocktypes/stone/ore-graded",
+        "op": "replace",
+        "path": "/dropsByType",
+        "value": {
+            "*": [
+                {
+                    "type": "item",
+                    "code": "crystalizedore-{grade}-{type}-{rock}",
+                    "quantity": {
+                        "avg": 0.02,
+                        "var": 0
+                    }
+                },
+                {
+                    "type": "item",
+                    "code": "ore-{grade}-{type}-{rock}",
+                    "quantity": {
+                        "avg": 2.50,
+                        "var": 0
+                    }
+                }
+            ]
+        }
+    },
+	
+	{
+        "file": "game:blocktypes/stone/ore-ungraded",
+        "op": "replace",
+        "path": "/dropsByType",
+        "value": {
+            "ore-quartz-*": [
+				{ 
+					type: "item", 
+					code: "clearquartz",  
+					quantity: { 
+						avg: 0.40, 
+						var: 0 
+						}, 
+					lastDrop: true 
+				},
+				{ 
+					type: "item", 
+					code: "ore-quartz",  
+					quantity: { 
+						avg: 2.50, 
+						var: 0 
+					}  
+				}
+			],
+			"ore-flint-*": [
+				{ 
+					type: "item", 
+					code: "flint",  
+					quantity: { 
+						avg: 3.00, 
+						var: 0 }, lastDrop: true 
+				}
+			],
+			"ore-sylvite-*": [
+				{ 
+					type: "item", 
+					code: "ore-{type}",  
+					quantity: { 
+						avg: 5.00, 
+						var: 0.25 
+					}  
+				}
+			],
+			"*": [ 
+				{ 
+					type: "item", 
+					code: "ore-{type}",  
+					quantity: { 
+						avg: 2.50, 
+						var: 0 
+					} 
+				}
+			]
+        }
+    }
+]
